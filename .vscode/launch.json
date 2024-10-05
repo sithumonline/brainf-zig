@@ -1,0 +1,15 @@
+// `CodeLLDB` VSCode extension
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}-test",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build_test"
+    }
+  ]
+}
